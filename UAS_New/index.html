@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page WebGIS Kabupaten Cianjur</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"charset="utf-8"></script>
+    <script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<header id="navbar">
+    <div class="container">
+    <div class="logo">
+    <img src="asset/logo-cianjur-kabupaten.png" alt="Logo" width="100">
+    <h1>WebGIS Kabupaten Cianjur</h1>
+    </div>
+    <nav>
+    <ul>
+    <li><a href="#hero-section">Home</a></li>
+    <li><a href="#map-section">Map</a></li>
+    <li><a href="#data-section">Data</a></li>
+    <li><a href="#author-section">Author</a></li>
+    <li><a href="#footer">Contact</a></li>
+    </ul>
+    </nav>
+    </div>
+    </header>
+    <div id="hero-section" class="hero-section">
+        <div class="hero-content">
+        <h1>WebGIS Resiko Bencana Gempabumi Kabupaten Cianjur</h1>
+        <p>Halaman untuk Mendapatkan Informasi Terkait Bencana Gempabumi</p>
+        </div>
+        </div>
+         
+
+        <div id="map-section">
+            <h2>Jelajahi WebGIS Kebencaan Gempabumi Kabupaten Cianjur</h2>
+            <div id="map">
+            <!-- akan muncul peta disini -->
+            </div>
+            </div>
+            <div id="data-section">
+                <h2>Data Tersedia</h2>
+                <div class="container">
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/pemandangan.jpeg" alt="Image 1">
+                <div class="description">
+                <h3>Kabupaten Cianjur</h3>
+                <p>Kabupaten Cianjur merupakan daerah yang terletak di daerah Jawa Barat. Kabupaten Cianjur memiliki
+                    luas daerah sekitar 3.614,35 km2. Kabupaten Cianjur memiliki bentuklahan Fluvial, Marine, Struktural, dan Vulkanik. 
+                    Kabupaten Cianjur ini berbatasan dengan Kabupaten Bandung Barat, Kabupaten Bogor, Kabupaten Garut, Kabupaten Bandung,
+                    dan Kabupaten Sukabumi. Kabupaten ini memiliki 32 kecamatan dan 354 desa yang tersebar dari utara sampe selatan. Akibat dari bentuklahan yang beraneka ragam
+                    banyak resiko kebencanaan yang mengintai Cianjur. Salah satunya yakni gempabumi.
+                </p>
+                </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="data-item"        
+                png.png alt="Image 1">
+                <div class="description">
+                <h3>Data 2</h3>
+                <p>Nullam sit amet metus nec enim blandit vestibulum vel eu erat. Cras ut 
+                nibh a sapien lobortis malesuada. Etiam malesuada sagittis turpis, et posuere nisi posuere a. 
+                Phasellus in nisi vel lacus condimentum varius. Vivamus ut justo vitae arcu mattis luctus nec a 
+                nisl. Curabitur vehicula urna ipsum, vel elementum justo ultrices at. Sed nec odio a odio egestas 
+                faucibus nec id felis. Integer ac ligula eu neque consequat gravida. Cras vel arcu leo. Integer 
+                sagittis laoreet quam, nec gravida purus lacinia nec. Sed non velit id nisl gravida tempor. Sed 
+                fermentum vel orci vel feugiat. Ut scelerisque ligula nec purus ultricies, eget tempus dolor 
+                luctus.</p>
+                </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/logo.png" alt="Image 1">
+                <div class="description">
+                <h3>Data 3</h3>
+                <p>Vivamus sed sollicitudin ligula. Nullam in nulla tincidunt, gravida 
+                turpis nec, efficitur eros. Sed interdum ipsum eget nunc malesuada, vel dapibus sapien 
+                sollicitudin. Suspendisse potenti. Ut gravida sapien at lorem pellentesque, sed gravida elit 
+                tincidunt. Pellentesque eu neque nec velit consequat convallis. Nam sodales dolor et mi tristique 
+                ultrices. In laoreet ante sed dui volutpat, eget tempor turpis condimentum. Fusce ac ipsum in nunc 
+                fermentum posuere. Sed in volutpat magna, sed tempor ipsum. Duis bibendum tempor tortor, vel 
+                lobortis magna eleifend a. Aliquam quis nisi in sapien vestibulum fringilla. Integer sit amet 
+                turpis felis. Aliquam euismod dolor id elit condimentum, eu sollicitudin mi ultricies. In hac 
+                habitasse platea dictumst. Cras suscipit posuere metus, sed dictum lorem convallis eu.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="container">
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/logo.png" alt="Image 1">
+                <div class="description">
+                <h3>Data 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec 
+                dolor ac lorem feugiat dictum sit amet et purus. Nulla facilisi. Quisque posuere nunc in arcu 
+                volutpat, eu finibus nisi ultricies. Sed nec velit vel turpis convallis vehicula. Mauris 
+                condimentum justo non libero hendrerit, sit amet finibus ipsum interdum. Ut feugiat rhoncus est, 
+                id commodo magna tincidunt ut. Sed hendrerit sapien in felis suscipit congue. Duis nec sodales 
+                libero. Fusce quis augue id urna tincidunt malesuada. Nunc euismod venenatis sapien nec dictum. 
+                Sed pellentesque vestibulum erat sit amet sollicitudin. Suspendisse potenti. Proin rhoncus libero 
+                vitae ligula fringilla, nec venenatis magna posuere.</p>
+                </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/logo.png" alt="Image 1">
+                <div class="description">
+                <h3>Data 2</h3>
+                <p>Nullam sit amet metus nec enim blandit vestibulum vel eu erat. Cras ut 
+                nibh a sapien lobortis malesuada. Etiam malesuada sagittis turpis, et posuere nisi posuere a. 
+                Phasellus in nisi vel lacus condimentum varius. Vivamus ut justo vitae arcu mattis luctus nec a 
+                nisl. Curabitur vehicula urna ipsum, vel elementum justo ultrices at. Sed nec odio a odio egestas 
+                faucibus nec id felis. Integer ac ligula eu neque consequat gravida. Cras vel arcu leo. Integer 
+                sagittis laoreet quam, nec gravida purus lacinia nec. Sed non velit id nisl gravida tempor. Sed 
+                fermentum vel orci vel feugiat. Ut scelerisque ligula nec purus ultricies, eget tempus dolor 
+                luctus.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+<div id="author-section"
+<div class="author-content">
+    <h2>Tentang Pembuat</h2>
+    <img src="asset/foto rifdah.jpg" alt="profile-picture" class="profile-picture">
+    <div class="author-name">
+    <h3>Rifdah Ashma Hudzwah</h3>
+    </div>
+    <p>Seorang mahasiswa program studi Sains Informasi Geografi angkatan 2022. 
+        Mempunyai fokus dalam bidang Penginderaan Jauh, GIS, Survey Pemetaan, dan Kartografi.</p>
+    </div>
+    </div>
+    
+
+    <div id="footer">
+        <div class="footer-content">
+        <h3>Hubungi Saya</h3>
+        <p>Email: rifdahah@gmail.com</p>
+        <p>Phone: +6289601117328</p>
+        </div>
+        </div>
+        
+        <script src="script.js"></script>
+</body>
+</html>

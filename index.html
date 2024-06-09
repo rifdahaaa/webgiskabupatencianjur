@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page WebGIS Kabupaten Cianjur</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"charset="utf-8"></script>
+    <script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-dataclassification.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<header id="navbar">
+    <div class="container">
+    <div class="logo">
+    <img src="asset/logo-cianjur-kabupaten.png" alt="Logo" width="100">
+    <h1>WebGIS Kabupaten Cianjur</h1>
+    </div>
+    <nav>
+    <ul>
+    <li><a href="#hero-section">Home</a></li>
+    <li><a href="#map-section">Map</a></li>
+    <li><a href="#data-section">Data</a></li>
+    <li><a href="#author-section">Author</a></li>
+    <li><a href="#footer">Contact</a></li>
+    </ul>
+    </nav>
+    </div>
+    </header>
+    <div id="hero-section" class="hero-section">
+        <div class="hero-content">
+        <h1>WebGIS Infrastruktur Sosial Kabupaten Cianjur</h1>
+        <p>Halaman untuk Mendapatkan Informasi Terkait Infrastruktur Sosial di Kabupaten Cianjur</p>
+        </div>
+        </div>
+         
+
+        <div id="map-section">
+            <h2>Jelajahi WebGIS Infrastruktur Sosial Kabupaten Cianjur</h2>
+            <div id="map">
+            <!-- akan muncul peta disini -->
+            </div>
+            </div>
+            <div id="data-section">
+                <h2>Data Tersedia</h2>
+                <div class="container">
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/inf.jpg" alt="Image 1">
+                <div class="description">
+                <h3>Infrastruktur</h3>
+                <p>Infrastruktur atau prasarana adalah seluruh struktur dan juga fasilitas dasar, baik itu fisik maupun sosial seperti bangunan, pasokan listrik, irigasi, jalan, jembatan dan lain sebagainya yang dibutuhkan 
+                    untuk operasional aktivitas masyarakat maupun perusahaan.
+                    Infrastruktur fisik dan sosial dapat didefinisikan sebagai kebutuhan dasar fisik pengorganisasian sistem struktur yang diperlukan untuk jaminan ekonomi sektor publik dan sektor privat
+                    sebagai layanan dan fasilitas yang diperlukan agar perekonomian dapat berfungsi dengan baik
+                    Infrastruktur sosial adalah aset yang mendukung kesehatan dan keterampilan masyarakat, termasuk fasilitas pendidikan seperti sekolah dan perpustakaan, 
+                    fasilitas kesehatan seperti rumah sakit dan pusat kesehatan, serta tempat rekreasi seperti taman dan museum.
+                </p>
+                </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="data-item">  
+                <img src="asset/ibaadah.jpg" alt="Image 1">
+                <div class="description">
+                <h3>Fasilitas Peribadatan</h3>
+                <p>Fasilitas peribadatan merupakan sarana kehidupan untuk mengisi kebutuhan rohani yang perlu disediakan dalam 
+                    lingkungan perumahan atau di luar berdasarkan peraturan yang telah ditetapkan dan juga 
+                    dengan keputusan masyarakat. Fasilitas peribadatan yang terdapat di Kabupaten Cianjur ini antara lain yakni Mesjid, Gereja, Pura, Klenteng, dan Vihara.
+                    Memang ketersediaan fasilitas peribadatan ini cukup lengkap. 
+                    
+                </p>
+                </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/rumkit.jpg" alt="Image 1">
+                <div class="description">
+                <h3>Fasilitas Kesehatan</h3>
+                <p>Fasilitas kesehatan adalah suatu alat dan/atau tempat yang digunakan untuk menyelenggarakan upaya pelayanan kesehatan, 
+                    baik promotif, preventif, kuratif maupun rehabilitatif yang dilakukan oleh pemerintah pusat, pemerintah daerah, dan/atau 
+                    masyarakat. Berikut ini merupakan beberapa jenis fasilitas kesehatan:
+                    Rumah Sakit (RS), Puskesmas (Pusat Kesehatan Masyarakat), Klinik, Laboratorium Kesehatan, Praktik Mandiri, SIRANAP (Sistem Informasi Rumah Sakit Nasional).
+                </p>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="container">
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/smansa.jpg" alt="Image 1">
+                <div class="description">
+                <h3>Fasilitas Pendidikan</h3>
+                <p>Fasilitas pendidikan merupakan salah satu kebutuhan penting dalam
+                    menunjang pelaksanaan proses pendidikan. Dengan adanya fasilitas dalam
+                    pendidikan, maka dapat menunjang keberhasilan dalam menciptakan
+                    pendidikan yang berkualitas. Fasilitas ini mencakup Sekolah Dasar?MI, Sekolah Menengah Pertama/MTS, Sekolah Menengah Atas/MA, dan Sekolah Menengah Kejuruan.
+                </p>
+                </div>
+                </div>
+                </div>
+                <div class="column">
+                <div class="data-item">
+                <img src="asset/pem.jpg" alt="Image 1">
+                <div class="description">
+                <h3>Fasilitas Pemerintahan</h3>
+                <p>Fasilitas Pemerintahan dan Layanan Publik adalah segala bentuk pelayanan, 
+                    baik dalam bentuk barang publik maupun jasa publik yang dilaksanakan oleh 
+                    pemerintah. Seluruh bagian pemerintah, baik Instansi Pemerintah Pusat, Instansi 
+                    Pemerintah Daerah, dan di lingkungan Badan Usaha Milik Negara atau Badan Usaha Milik Daerah, 
+                    wajib mendukung adanya fasilitas ini secara merata di setiap daerah. 
+                    Kantor atau fasilitas pemerintahan yang ada di Kabupaten Cianjur ini antara lain Kantor Kepala Desa, Kantor Polisi, Kantor Camat, Kantor DPRD, Lembaga Pemasyarakatan, Instalasi TNI (AD/AL/AU), dan Kantor Pemerintahan Lainnya.
+
+                </p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+<div id="author-section"
+<div class="author-content">
+    <h2>Tentang Pembuat</h2>
+    <img src="asset/foto rifdah.jpg" alt="profile-picture" class="profile-picture">
+    <div class="author-name">
+    <h3>Rifdah Ashma Hudzwah</h3>
+    </div>
+    <p>Seorang mahasiswa program studi Sains Informasi Geografi angkatan 2022. 
+        Mempunyai fokus dalam bidang Penginderaan Jauh, GIS, Survey Pemetaan, dan Kartografi.</p>
+    </div>
+    </div>
+    
+
+    <div id="footer">
+        <div class="footer-content">
+        <h3>Hubungi Saya</h3>
+        <p>Email: rifdahah@gmail.com</p>
+        <p>Phone: +6289601117328</p>
+        </div>
+        </div>
+        
+        <script src="script.js"></script>
+</body>
+</html>
